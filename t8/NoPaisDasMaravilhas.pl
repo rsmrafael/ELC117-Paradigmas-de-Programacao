@@ -45,7 +45,7 @@ check19([AP1,AP2,AP3,AP4,AP5]) :- week(W) , member((AP1,2,8),W), member((AP2,3,8
 	% ?- check19(["lia","tina","nenhuma","pilar","rute"]).
 	% false.
 	% ?- check19(["rute","tina","nenhuma","pilar","mel"]).
-	% true .
+	% true . (Resposta certa (d))
 	
 % Questão 21
 
@@ -60,7 +60,7 @@ check21(AP,D,H) :- week(W), member(("tina",DT,HT),W), member(("nanda",DN,HN),W),
 	% ?- check21("rute",5,8).
 	% true .
 	% ?- check21("lia",5,8).
-	% false.
+	% false. (Resposta certa (c))
 	% ?- check21("lia",4,9).
 	% true .
 	% check21("tina",D,_),check21("pilar",D,_).
@@ -71,7 +71,7 @@ check21(AP,D,H) :- week(W), member(("tina",DT,HT),W), member(("nanda",DN,HN),W),
 check24(W) :- week(W) , member(("rute",5,8),W), member(("tina",6,8),W).
 	% ?- check24(W),member(("olga",DO,HO),W),member(("sara",DS,HS),W),(DO>DS;(DO=DS,HO>HS)).
 	% false.
-	% ?- check24(W),member(("lia",4,9),W).
+	% ?- check24(W),member(("lia",4,9),W).  (Resposta certa (b))
 	% W = [ ("lia", 4, 9), ("mel", 2, 8), ("nanda", 5, 9), ("olga", 2, 9), ("pilar", 3, 8), ("rute", 5, 8), ("sara", 3, 9), ("tina", ..., ...), (..., ...)] . (true)
 	% ?- check24(W),member(("nanda",2,8),W).
 	% false.
